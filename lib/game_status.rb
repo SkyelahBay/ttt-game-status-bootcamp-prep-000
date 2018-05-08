@@ -29,8 +29,8 @@ def won?(board)
     end #end if
   end #end iteration of WIN_COMBINATIONS
   
-  if full?(board)
-    return false #if no winner was found in the loop, that means the combination wasn't returned, so there's a draw if full.
+  if full?(board) #if no winner was found in the iteration, that means the combination wasn't returned.
+    return false  #which means if the board is full, it's a draw.
   end #end if
 end #end won?
 
